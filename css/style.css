@@ -10,7 +10,6 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
-
 }
 
 a {
@@ -136,6 +135,7 @@ a {
     position: relative;
     text-align: center;
     z-index: 4;
+    /*overflow: hidden;*/
 }
 
 
@@ -144,7 +144,6 @@ a {
 .st-scroll {
     left: 0;
     top: 0;
-    text-align: center;
     -webkit-transform: translate3D(0, 0, 0);
     -moz-transform: translate3D(0, 0, 0);
     -ms-transform: translate3D(0, 0, 0);
@@ -204,13 +203,12 @@ a {
 
 img {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 4%;
     border-radius: 50%;
     position: absolute;
     left: 44%;
-    border: 5px solid red;
     width: 10%;
-    height: 14%;
+    height: 18%;
     z-index: 50;
     -webkit-transition: transform 1s ease-in-out;
     -ms-transition: transform 1s ease-in-out;
@@ -218,6 +216,16 @@ img {
     -o-transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
 }
+
+
+/*@-webkit-keyframes op{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}*/
 
 img:hover {
     -webkit-transform: scale(1.2);
@@ -227,21 +235,31 @@ img:hover {
     transform: scale(1.2);
 }
 
+@media screen and (max-width:1366px) {
+    img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
 
 /*h2的动画*/
 
 .st-panel h2 {
     color: #e23a6e;
-    font-size: 55px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
     letter-spacing: 3px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     /*加粗*/
     width: 100%;
     position: absolute;
     z-index: 20;
-    margin-top: 16%;
+    margin-top: 15%;
     text-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
     -webkit-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -250,129 +268,11 @@ img:hover {
     backface-visibility: hidden;
 }
 
-#st-control-1:checked ~ .st-scroll #lxy, #st-control-2:checked ~ .st-scroll #xx, #st-control-3:checked ~ .st-scroll #xm, #st-control-4:checked ~ .st-scroll #sh {
-   
-    -webkit-animation: movedown 1s ease-in-out 0.2s backwards;
-    -moz-animation: movedown 1s ease-in-out 0.2s backwards;
-    -ms-animation: movedown 1s ease-in-out 0.2s backwards;
-    -o-animation: movedown 1s ease-in-out 0.2s backwards;
-    animation: movedown 1s ease-in-out 0.2s backwards;
-}
-
-@-webkit-keyframes movedown {
-    0% {
-        -webkit-transform: translateY(-40px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-o-keyframes movedown {
-    0% {
-        -o-transform: translateY(-400px);
-        opacity: 0;
-    }
-    100% {
-        -o-transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes movedown {
-    0% {
-        -ms-transform: translateY(-40px);
-        opacity: 0;
-    }
-    100% {
-        -ms-transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes movedown {
-    0% {
-        -moz-transform: translateY(-40px);
-        opacity: 0;
-    }
-    100% {
-        -moz-transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-.st-scroll h3 {
-    letter-spacing: 3px;
-    color: #9da;
-    font-size: 18px;
-    line-height: 20px;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-    position: absolute;
-    margin-top: 14%;
-}
-
-#st-control-1:checked ~ .st-scroll h3 {
-    /*background: #CCC;*/
-    -webkit-animation: moveleft 1s ease-in-out 0.2s backwards;
-    -moz-animation: moveleft 1s ease-in-out 0.2s backwards;
-    -ms-animation: moveleft 1s ease-in-out 0.2s backwards;
-    -o-animation: moveleft 1s ease-in-out 0.2s backwards;
-    animation: moveleft 1s ease-in-out 0.2s backwards;
-}
-
-@-webkit-keyframes movleft {
-    0% {
-        -webkit-transform: translateY(40px);
-        opacity: 0;
-        color: #e23a6e;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-        color: #9da;
-    }
-}
-
-@-moz-keyframes movleft {
-    0% {
-        -moz-transform: translateY(40px);
-        opacity: 0;
-        color: #e23a6e;
-    }
-    100% {
-        -moz-transform: translateY(0px);
-        opacity: 1;
-        color: #9da;
-    }
-}
-
-@-ms-keyframes movleft {
-    0% {
-        -ms-transform: translateY(40px);
-        opacity: 0;
-        color: #e23a6e;
-    }
-    100% {
-        -ms-transform: translateY(0px);
-        opacity: 1;
-        color: #9da;
-    }
-}
-
-@-o-keyframes movleft {
-    0% {
-        -o-transform: translateY(40px);
-        opacity: 0;
-        color: #e23a6e;
-    }
-    100% {
-        -o-transform: translateY(0px);
-        opacity: 1;
-        color: #9da;
+@media screen and (max-width: 1366px) {
+    .st-panel h2 {
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 500;
     }
 }
 
@@ -381,24 +281,286 @@ img:hover {
 
 .st-panel p {
     position: absolute;
-    width: 60%;
-    margin-top: 20%;
-    font-size: 30px;
+    width: 70%;
+    margin-top: 22%;
+    font-size: 24px;
     line-height: 28px;
     padding: 2px;
-    width: 100%;
-    text-align: center;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    color: #8b8b8b;
+    color: #a23e6a;
     z-index: 10;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
-#st-control-1:checked ~ .st-scroll #w, #st-control-2:checked ~ .st-scroll #x, #st-control-3:checked ~ .st-scroll #m, #st-control-4:checked ~ .st-scroll #s {
+
+/*首页表格*/
+
+#table {
+    position: absolute;
+    margin-top: 15%;
+    left: 25%;
+    font-size: 20px;
+    font-family: consolas;
+    /*border: 2px solid #9ACD32;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-align: left;
+    width: 60%;
+}
+
+table td {
+    color: #2a7da9;
+    height: 80px;
+}
+
+
+@media screen and (max-width:1366px) {
+    table td {
+        height: 60px;
+        width: 100px;
+        padding-right: 10px;
+    }
+}
+
+
+/*第二页*/
+
+#x {
+    position: absolute;
+    width: 60%;
+    margin-top: 17%;
+    left: 25%;
+}
+
+#x .x-biglist {
+    list-style-type: none;
+    position: relative;
+}
+
+@media screen and (max-width: 1366px) {
+    #x {
+        position: absolute;
+        width: 60%;
+        margin-top: 17%;
+        left: 25%;
+    }
+}
+
+.first, .second, .third, .four, .five {
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#x h4 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid;
+    /*justify字母两端对齐*/
+    text-align: justify;
+    font-family: consolas;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1366px) {
+    .first, .second, .third, .four, .five {
+        margin-bottom: 15px;
+    }
+}
+
+.first-h4 {
+    color: #2a7da9;
+    background-color: #d6efff;
+    border-color: #3498db;
+    /*width: 93%;*/
+}
+
+.second-h4 {
+    color: #2a7da9;
+    background-color: #d6efff;
+    border-color: #3498db;
+    /*width: 85%;*/
+}
+
+.third-h4 {
+    color: #6e9c0f;
+    background-color: #BCEE68;
+    border-color: #80bd01;
+    /*width: 75%;*/
+}
+
+.four-h4 {
+    color: #6e9c0f;
+    background-color: #BCEE68;
+    border-color: #80bd01;
+    /*width: 65%;*/
+}
+
+.five-h4 {
+    color: #ff742a;
+    background-color: #EEDC82;
+    border-color: #fdbc40;
+    /*width: 55%;*/
+}
+
+@media screen and (min-width:1400px) {
+    .third-h4, .four-h4 {
+        background-color: #eaf6d0;
+    }
+    .five-h4 {
+        background-color: #fff6dd;
+    }
+}
+
+.first {
+    width: 93%;
+}
+
+.second {
+    width: 85%;
+}
+
+.third {
+    width: 75%;
+}
+
+.four {
+    width: 65%;
+}
+
+.five {
+    width: 55%;
+}
+
+
+/*div出现*/
+
+.biglist-div {
+    position: absolute;
+    left: 250px;
+    margin-top: -5px;
+    z-index: 9999;
+    max-width: 350px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 0;
+    -webkit-transform: opacity 0.8s;
+    transform: opacity 0.8s ease-in-out;
+}
+
+@media screnn and (max-width:1366px) {
+    .biglist-div {
+        margin-top: -3px;
+        padding: 8px;
+    }
+}
+
+.first:hover .biglist-div, .second:hover .biglist-div, .third:hover .biglist-div, .four:hover .biglist-div, .five:hover .biglist-div {
+    opacity: 1;
+}
+
+.div-list li {
+    list-style-type: disc;
+    text-align: justify;
+    margin-left: 5px;
+    line-height: 25px;
+    font-family: 'Lantinghei SC', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#st-control-2:checked ~ .st-scroll .first {
+    -webkit-animation: js 2s ease;
+}
+
+#st-control-2:checked ~ .st-scroll .second {
+    -webkit-animation: hc 2s ease;
+}
+
+#st-control-2:checked ~ .st-scroll .third {
+    -webkit-animation: asp 2s ease;
+}
+
+#st-control-2:checked ~ .st-scroll .four {
+    -webkit-animation: sql 2s ease;
+}
+
+#st-control-2:checked ~ .st-scroll .five {
+    -webkit-animation: sublime 2s ease;
+}
+
+@-webkit-keyframes js {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 93%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hc {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 85%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes asp {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 75%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes sql {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 65%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes sublime {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        width: 55%;
+        opacity: 1;
+    }
+}
+
+
+/*页面上字体的动画*/
+
+#st-control-1:checked ~ .st-scroll #table,  #st-control-4:checked ~ .st-scroll #s {
     -webkit-animation: moveup 2s ease-in-out 0.2s backwards;
     -o-animation: moveup 2s ease-in-out 0.2s backwards;
     -ms-animation: moveup 2s ease-in-out 0.2s backwards;
@@ -460,11 +622,105 @@ img:hover {
         opacity: 1;
     }
 }
+#st-control-3:checked ~ .st-scroll #m{
+    -webkit-animation:movedown 2s ease-in-out;
+}
+@-webkit-keyframes movedown{
+    0%{
+        -webkit-transform:translateY(-40px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform:translateY(0px);
+        opacity: 1;
+    }
+}
 
-#play {
+/*#play {
     position: fixed;
     z-index: 100;
-    border: 5px solid red;
+    border: 2px solid red;
     right: 0;
     bottom: 0;
+}*/
+
+
+/*段落p的样式*/
+
+#m {
+    position: absolute;
+    margin-top: 18%;
+    text-align: left;
+    padding-left: 5px;
+    left: 10%;
+    width: 80%;
+}
+
+legend {
+    /*border: 2px solid #9da;*/
+    height: 30px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    line-height: 30px;
+    color: #2a7da9;
+    text-align: center;
+}
+
+fieldset {
+    height: 30px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    line-height: 30px;
+    color: #2a7da9;
+}
+
+@media screen and (max-width:1366px) {
+    #m {
+        margin-top: 14%;
+    }
+    fieldset {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+#s {
+    position: absolute;
+    left: 50%;
+    text-align: left;
+    margin-top: 20%;
+    margin-left: -200px;
+    color: #a23e6a;
+    /*width: 60%;*/
+    /*background: #E0FFFF;*/
+    font-family: "微软雅黑";
+    font-size: 18px;
+    line-height: 23px;
+    padding: 20px;
+    border: 2px dashed #a23e6a;
+    border-radius: 10px;
+}
+
+#s span {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+    padding-right: 10%;
+}
+
+@media screen and (max-width:1366px) {
+    #s {
+        margin-top: 20%;
+        /*width: 70%;*/
+        left: 50%;
+        margin-left: -80px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px;
+    }
+    #s span {
+        font-size: 30px;
+        line-height: 33px;
+    }
 }
