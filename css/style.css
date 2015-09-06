@@ -10,6 +10,10 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
 }
 
 a {
@@ -135,7 +139,10 @@ a {
     position: relative;
     text-align: center;
     z-index: 4;
+<<<<<<< HEAD
     /*overflow: hidden;*/
+=======
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
 }
 
 
@@ -144,6 +151,10 @@ a {
 .st-scroll {
     left: 0;
     top: 0;
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     -webkit-transform: translate3D(0, 0, 0);
     -moz-transform: translate3D(0, 0, 0);
     -ms-transform: translate3D(0, 0, 0);
@@ -203,12 +214,22 @@ a {
 
 img {
     text-align: center;
+<<<<<<< HEAD
     margin-top: 4%;
     border-radius: 50%;
     position: absolute;
     left: 44%;
     width: 10%;
     height: 18%;
+=======
+    margin-top: 5%;
+    border-radius: 50%;
+    position: absolute;
+    left: 44%;
+    border: 5px solid red;
+    width: 10%;
+    height: 14%;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     z-index: 50;
     -webkit-transition: transform 1s ease-in-out;
     -ms-transition: transform 1s ease-in-out;
@@ -217,6 +238,7 @@ img {
     transition: transform 1s ease-in-out;
 }
 
+<<<<<<< HEAD
 
 /*@-webkit-keyframes op{
     0%{
@@ -227,6 +249,8 @@ img {
     }
 }*/
 
+=======
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
 img:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -235,6 +259,7 @@ img:hover {
     transform: scale(1.2);
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:1366px) {
     img:hover {
         -webkit-transform: scale(1.1);
@@ -245,21 +270,35 @@ img:hover {
     }
 }
 
+=======
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
 
 /*h2的动画*/
 
 .st-panel h2 {
     color: #e23a6e;
+<<<<<<< HEAD
     font-size: 40px;
     line-height: 45px;
     letter-spacing: 3px;
     text-align: center;
     font-weight: 700;
+=======
+    font-size: 55px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 900;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     /*加粗*/
     width: 100%;
     position: absolute;
     z-index: 20;
+<<<<<<< HEAD
     margin-top: 15%;
+=======
+    margin-top: 16%;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     text-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
     -webkit-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -268,6 +307,7 @@ img:hover {
     backface-visibility: hidden;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1366px) {
     .st-panel h2 {
         font-size: 35px;
@@ -509,10 +549,62 @@ h4 {
     }
     100% {
         width: 93%;
+=======
+#st-control-1:checked ~ .st-scroll #lxy, #st-control-2:checked ~ .st-scroll #xx, #st-control-3:checked ~ .st-scroll #xm, #st-control-4:checked ~ .st-scroll #sh {
+   
+    -webkit-animation: movedown 1s ease-in-out 0.2s backwards;
+    -moz-animation: movedown 1s ease-in-out 0.2s backwards;
+    -ms-animation: movedown 1s ease-in-out 0.2s backwards;
+    -o-animation: movedown 1s ease-in-out 0.2s backwards;
+    animation: movedown 1s ease-in-out 0.2s backwards;
+}
+
+@-webkit-keyframes movedown {
+    0% {
+        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
         opacity: 1;
     }
 }
 
+@-o-keyframes movedown {
+    0% {
+        -o-transform: translateY(-400px);
+        opacity: 0;
+    }
+    100% {
+        -o-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes movedown {
+    0% {
+        -ms-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -ms-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes movedown {
+    0% {
+        -moz-transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translateY(0px);
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
+        opacity: 1;
+    }
+}
+
+<<<<<<< HEAD
 @-webkit-keyframes hc {
     0% {
         width: 0%;
@@ -554,13 +646,110 @@ h4 {
     100% {
         width: 55%;
         opacity: 1;
+=======
+.st-scroll h3 {
+    letter-spacing: 3px;
+    color: #9da;
+    font-size: 18px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    margin-top: 14%;
+}
+
+#st-control-1:checked ~ .st-scroll h3 {
+    /*background: #CCC;*/
+    -webkit-animation: moveleft 1s ease-in-out 0.2s backwards;
+    -moz-animation: moveleft 1s ease-in-out 0.2s backwards;
+    -ms-animation: moveleft 1s ease-in-out 0.2s backwards;
+    -o-animation: moveleft 1s ease-in-out 0.2s backwards;
+    animation: moveleft 1s ease-in-out 0.2s backwards;
+}
+
+@-webkit-keyframes movleft {
+    0% {
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+        color: #e23a6e;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+        color: #9da;
+    }
+}
+
+@-moz-keyframes movleft {
+    0% {
+        -moz-transform: translateY(40px);
+        opacity: 0;
+        color: #e23a6e;
+    }
+    100% {
+        -moz-transform: translateY(0px);
+        opacity: 1;
+        color: #9da;
+    }
+}
+
+@-ms-keyframes movleft {
+    0% {
+        -ms-transform: translateY(40px);
+        opacity: 0;
+        color: #e23a6e;
+    }
+    100% {
+        -ms-transform: translateY(0px);
+        opacity: 1;
+        color: #9da;
+    }
+}
+
+@-o-keyframes movleft {
+    0% {
+        -o-transform: translateY(40px);
+        opacity: 0;
+        color: #e23a6e;
+    }
+    100% {
+        -o-transform: translateY(0px);
+        opacity: 1;
+        color: #9da;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     }
 }
 
 
+<<<<<<< HEAD
 /*页面上字体的动画*/
 
 #st-control-1:checked ~ .st-scroll #table,  #st-control-4:checked ~ .st-scroll #s {
+=======
+/*p的动画*/
+
+.st-panel p {
+    position: absolute;
+    width: 60%;
+    margin-top: 20%;
+    font-size: 30px;
+    line-height: 28px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #8b8b8b;
+    z-index: 10;
+    letter-spacing: 3px;
+}
+
+#st-control-1:checked ~ .st-scroll #w, #st-control-2:checked ~ .st-scroll #x, #st-control-3:checked ~ .st-scroll #m, #st-control-4:checked ~ .st-scroll #s {
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
     -webkit-animation: moveup 2s ease-in-out 0.2s backwards;
     -o-animation: moveup 2s ease-in-out 0.2s backwards;
     -ms-animation: moveup 2s ease-in-out 0.2s backwards;
@@ -622,6 +811,7 @@ h4 {
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 #st-control-3:checked ~ .st-scroll #m{
     -webkit-animation:movedown 2s ease-in-out;
 }
@@ -723,4 +913,13 @@ fieldset {
         font-size: 30px;
         line-height: 33px;
     }
+=======
+
+#play {
+    position: fixed;
+    z-index: 100;
+    border: 5px solid red;
+    right: 0;
+    bottom: 0;
+>>>>>>> b6d71c2bd5605dc339f27b5d2adb10e17d7cf7b7
 }
