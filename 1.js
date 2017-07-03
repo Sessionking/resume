@@ -115,6 +115,7 @@ function backcanvas(idh, idc) {
             ctx.arc(_this.pos.x, _this.pos.y, _this.scale * 10, 0, 2 * Math.PI, false);
             ctx.fillStyle = 'rgba(255,48,100,' + _this.alpha + ')';
             ctx.fill();
+      
         };
     }
 }
